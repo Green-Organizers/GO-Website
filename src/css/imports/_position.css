@@ -2,7 +2,7 @@
 .relative  { position: relative; }
 .absolute  { position: absolute; }
 .fixed  { position: fixed; }
-
+.fixd { position: fixed; }
 @media (--breakpoint-not-small) {
   .static-ns { position: static; }
   .relative-ns  { position: relative; }
