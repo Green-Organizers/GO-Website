@@ -42,7 +42,7 @@
 .pt5 { padding-top: var(--spacing-extra-large); }
 .pt6 { padding-top: var(--spacing-extra-extra-large); }
 .pt7 { padding-top: var(--spacing-extra-extra-extra-large); }
-
+.pt50 { padding-top: 50px;}
 .pv0 {
   padding-top: var(--spacing-none);
   padding-bottom: var(--spacing-none);
