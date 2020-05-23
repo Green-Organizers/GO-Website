@@ -4,10 +4,10 @@ subtitle: ‎
 image: img/og-image.jpg
 blurb:
   heading: Who we are
-  text: Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  text: We are a group of volunteers, activists, organizers who want to see our
+    government work for us, the way it was always supposed to be. Our goal is to
+    reinvigorate our democracy by focusing on local communities by helping Green
+    party candidates and groups that want to improve their neighbors' lives.
 intro:
   heading: Our values
   text: Kaldi is the ultimate spot for coffee lovers who want to learn about their
