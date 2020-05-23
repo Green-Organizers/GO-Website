@@ -4,8 +4,6 @@
 
 {{ partial "short-text" .Params.blurb}}
 
-{{ partial "valuebox" .Params }}
-
 {{ partial "valuebox" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
 
 {{ partial "blog" . }}
