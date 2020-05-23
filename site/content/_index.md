@@ -10,10 +10,249 @@ blurb:
     party candidates and groups that want to improve their neighbors' lives.
 intro:
   heading: Our values
-  text: Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
+  text: >
+    <html>
+
+    <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+    * {box-sizing: border-box;}
+
+
+    /* Button used to open the contact form - fixed at the bottom of the page */
+
+    .open-button {
+      background-color: #555;
+      color: white;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      width: 100px;
+      height:100px;
+      border-radius:50%;
+    }
+
+
+    /* The popup form - hidden by default */
+
+    .form-popup {
+      display: none;
+      bottom: 0;
+      down: 0px;
+      border: 3px solid #f1f1f1;
+      position: relative;
+    }
+
+
+    /* Add styles to the form container */
+
+    .form-popup {
+      max-width: 100%;
+      max-height: 100%;
+      padding: 10px;
+      background-color: green;
+      border-radius: 10%;
+    }
+
+
+    /* Full-width input fields */
+
+    .form-poppup input[type=text], .form-popup input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+
+
+    /* When the inputs get focus, do something */
+
+    .form-popup input[type=text]:focus, .form-popup input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+
+    /* Set a style for the submit/login button */
+
+    .form-popup .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.8;
+    }
+
+
+    /* Add a red background color to the cancel button */
+
+    .form-popup .cancel {
+      background-color: red;
+    }
+
+    /* Add some hover effects to buttons */
+
+    .btn:hover, .open-button:hover, .close:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .close {
+      color: red;
+      float: right;
+      font-size: 70px;
+      font-weight: bold;
+      opacity: 0.7;
+    }
+
+    .item {
+      font-size: 20px;
+      padding: 1px;
+    }
+
+    .wrapper {
+      max-width: 300px;
+      display: grid;
+      gap: 150px;
+      grid-template-rows: [up] 1fr [down] 1fr;
+      grid-template-columns: [left] 1fr [right] 1fr;
+
+    }
+
+    .item1 {
+      place-self: center;
+      grid-row: up;
+      grid-column: left;
+    }
+
+    .item2 {
+      place-self: center;
+      grid-row: up;
+      grid-column: right;
+    }
+
+    .item3 {
+      place-self: center;
+      grid-row: down;
+      grid-column: left;
+    }
+
+    .item4 {
+      place-self: center;
+      grid-row: down;
+      grid-column: right;
+
+      
+    }
+
+    .item5 {
+    	grid-row: up / span 2;
+        grid-column: left / span 2;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
+
+    <div class="wrapper">
+      <div class="item1"><button class="open-button" onclick="openDemocracy()">Democracy</button></div>
+      <div class="item2"><button class="open-button" onclick="openSocialJustice()">Social Justice</button></div>
+      <div class="item3"><button class="open-button" onclick="openEquality()">Equality</button></div>
+      <div class="item4"><button class="open-button" onclick="openPeace()">Peace</button></div>
+      <div class="form-popup item5" id="democracy">
+      	<span class="close" onclick="closeDemocracy()">&times;</span>
+        <h1>Democracy</h1>
+        <ul>
+        	<li class="item">test</li>
+            <li class="item">test</li>
+            <li class="item">test</li>
+        </ul>
+      </div>
+      <div class="form-popup item5" id="social-justice">
+      	<span class="close" onclick="closeSocialJustice()">&times;</span>
+        <h1>Social Justice</h1>
+        <ul>
+        	<li class="item">test</li>
+            <li class="item">test</li>
+            <li class="item">test</li>
+        </ul>
+      </div>
+      <div class="form-popup item5" id="equality">
+      	<span class="close" onclick="closeEquality()">&times;</span>
+        <h1>Equality</h1>
+        <ul>
+        	<li class="item">test</li>
+            <li class="item">test</li>
+            <li class="item">test</li>
+        </ul>
+      </div>
+      <div class="form-popup item5" id="peace">
+      	<span class="close" onclick="closePeace()">&times;</span>
+        <h1>Peace</h1>
+        <ul>
+        	<li class="item">Ending our wars</li>
+            <li class="item">Ending cruel sanctions that hurt working class and poor people in other countries</li>
+            <li class="item">Reducing our military presence around the world (around 800 bases in 70 countries) </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <script>
+
+    function openDemocracy() {
+      document.getElementById("democracy").style.display = "inline-block";
+    }
+
+
+    function closeDemocracy() {
+      document.getElementById("democracy").style.display = "none";
+    }
+
+    function openPeace() {
+      document.getElementById("peace").style.display = "inline-block";
+    }
+
+
+    function closePeace() {
+      document.getElementById("peace").style.display = "none";
+    }
+
+    function openEquality() {
+      document.getElementById("equality").style.display = "inline-block";
+    }
+
+
+    function closeEquality() {
+      document.getElementById("equality").style.display = "none";
+    }
+
+    function openSocialJustice() {
+      document.getElementById("social-justice").style.display = "inline-block";
+    }
+
+
+    function closeSocialJustice() {
+      document.getElementById("social-justice").style.display = "none";
+    }
+
+    </script>
+
+
+    </body>
+
+    </html>
 products:
   - image: img/illustrations-coffee.svg
     text: We sell green and roasted coffee beans that are sourced directly from
